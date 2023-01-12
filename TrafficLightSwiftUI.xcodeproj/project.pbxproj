@@ -12,7 +12,6 @@
 		E6C28CB3296F2C2E00AA8642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C28CB2296F2C2E00AA8642 /* Assets.xcassets */; };
 		E6C28CB6296F2C2E00AA8642 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C28CB5296F2C2E00AA8642 /* Preview Assets.xcassets */; };
 		E6C28CBD296F2E9200AA8642 /* RedLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C28CBC296F2E9200AA8642 /* RedLightView.swift */; };
-		E6C28CC3296F3F0500AA8642 /* AllLightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C28CC2296F3F0500AA8642 /* AllLightsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		E6C28CB2296F2C2E00AA8642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6C28CB5296F2C2E00AA8642 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6C28CBC296F2E9200AA8642 /* RedLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedLightView.swift; sourceTree = "<group>"; };
-		E6C28CC2296F3F0500AA8642 /* AllLightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLightsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 				E6C28CAE296F2C2C00AA8642 /* TrafficLightSwiftUIApp.swift */,
 				E6C28CB0296F2C2C00AA8642 /* ContentView.swift */,
 				E6C28CBC296F2E9200AA8642 /* RedLightView.swift */,
-				E6C28CC2296F3F0500AA8642 /* AllLightsView.swift */,
 				E6C28CB2296F2C2E00AA8642 /* Assets.xcassets */,
 				E6C28CB4296F2C2E00AA8642 /* Preview Content */,
 			);
@@ -145,7 +142,6 @@
 			files = (
 				E6C28CB1296F2C2C00AA8642 /* ContentView.swift in Sources */,
 				E6C28CAF296F2C2C00AA8642 /* TrafficLightSwiftUIApp.swift in Sources */,
-				E6C28CC3296F3F0500AA8642 /* AllLightsView.swift in Sources */,
 				E6C28CBD296F2E9200AA8642 /* RedLightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

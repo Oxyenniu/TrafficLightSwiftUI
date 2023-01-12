@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var currentLight = CurrentLight.red
-    var redLight = LightView(opacity: 0.3, color: .red)
-    var orangeLight = LightView(opacity: 0.3, color: .orange)
-    var greenLight = LightView(opacity: 0.3, color: .green)
+    @State var opacityRed = 0.3
+    @State var opacityYellow = 0.3
+    @State var opacityGreen = 0.3
     enum CurrentLight {
         case red, yellow, green
     }
@@ -20,22 +20,26 @@ struct ContentView: View {
             Color.black
             
                 .ignoresSafeArea()
-            AllLightsView()
-                .padding(.top, -350)
+            VStack {
+                LightView(opacity: opacityRed, color: .red)
+                LightView(opacity: opacityYellow, color: .orange)
+                LightView(opacity: opacityGreen, color: .green)
+            }
+            .padding(.top, -350)
             
             
             Button(action: startButtonTapped) {
-                if redLight.opacity == 1 || orangeLight.opacity == 1 || greenLight.opacity == 1 { Text("Next")
+                if opacityRed == 1 || opacityYellow == 1 || opacityGreen == 1 { Text("Next")
                 } else {
                     Text("START")
                 }
             }
-                .frame(width: 120, height: 30)
-                .background(Color.blue)
-                .cornerRadius(10)
-                .bold()
-                .font(.title)
-                .foregroundColor(.white)
+            .frame(width: 120, height: 30)
+            .background(Color.blue)
+            .cornerRadius(10)
+            .bold()
+            .font(.title)
+            .foregroundColor(.white)
             
             .padding(.top, 750)
         }
@@ -45,16 +49,16 @@ struct ContentView: View {
         
         switch currentLight {
         case .red:
-            greenLight.opacity = 0.3
-            redLight.opacity = 1
+            opacityGreen = 0.3
+            opacityRed = 1
             currentLight = .yellow
         case .yellow:
-            redLight.opacity = 0.3
-            orangeLight.opacity = 1
+            opacityRed = 0.3
+            opacityYellow = 1
             currentLight = .green
         case .green:
-            greenLight.opacity = 1
-            orangeLight.opacity = 0.3
+            opacityGreen = 1
+            opacityYellow = 0.3
             currentLight = .red
             
         }

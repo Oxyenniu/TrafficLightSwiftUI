@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LightView: View {
-    @State var opacity = 0.3
+    var opacity = 0.3
     let color: Color
     var body: some View {
         Circle()
