@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AllLightsView: View {
-    
     var body: some View {
         VStack {
             LightView(color: .red)
