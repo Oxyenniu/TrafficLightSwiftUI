@@ -18,9 +18,8 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.black
-            
                 .ignoresSafeArea()
-            VStack {
+            VStack(spacing: 20){
                 LightView(opacity: opacityRed, color: .red)
                 LightView(opacity: opacityYellow, color: .orange)
                 LightView(opacity: opacityGreen, color: .green)
@@ -34,7 +33,7 @@ struct ContentView: View {
                     Text("START")
                 }
             }
-            .frame(width: 120, height: 30)
+            .frame(width: 120, height: 50)
             .background(Color.blue)
             .cornerRadius(10)
             .bold()
